@@ -14,7 +14,7 @@ class Login():
         '''  Sign in part   '''
         sign_btn = driver.find_element(By.LINK_TEXT,"Sign in")
         sign_btn.click()
-        userName = "Cpusendra@gmail.com"
+        userName = "test@gmail.com"
         user = driver.find_element(By.ID, "username")
 
         user.send_keys(userName.lower())
@@ -22,7 +22,7 @@ class Login():
 
         password = driver.find_element(By.ID,'password')
         password.clear()
-        password.send_keys("kanchi123")
+        password.send_keys("password")
         time.sleep(1)
         signIn = driver.find_element(By.XPATH,"//button[@class='btn__primary--large from__button--floating']")
         signIn.click()
